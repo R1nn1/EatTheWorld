@@ -253,7 +253,7 @@ extraTab.newToggle("AutoBuy Speed", "Upgrades your speed for you", true, functio
     end
 end)
 
-extraTab.newToggle("Auto Buy Size Multiplier", "Automatically buys size multipliers for you", true, function(toggleState)
+extraTab.newToggle("Auto Buy Size Multiplier", "Upgrades your size multiplier for you", true, function(toggleState)
     autoBuySizeMultiplierEnabled = toggleState
     if toggleState then
         print("Auto Buy Size Multiplier On")
@@ -263,7 +263,7 @@ extraTab.newToggle("Auto Buy Size Multiplier", "Automatically buys size multipli
     end
 end)
 
-extraTab.newToggle("Auto Upgrade Eat Speed", "Automatically upgrades your eat speed for you", true, function(toggleState)
+extraTab.newToggle("Auto Upgrade Eat Speed", "Upgrades your eat speed for you", true, function(toggleState)
     autoUpgradeEatSpeedEnabled = toggleState
     if toggleState then
         print("Auto Upgrade Eat Speed On")
@@ -273,13 +273,13 @@ extraTab.newToggle("Auto Upgrade Eat Speed", "Automatically upgrades your eat sp
     end
 end)
 
-extraTab.newToggle("Small Reward", "Automatically claims the small reward", true, function(toggleState)
+extraTab.newToggle("Auto Claim Free Rewards", "Automatically claimtogge free rewards for you", true, function(toggleState)
     smallRewardEnabled = toggleState
     if toggleState then
-        print("Small Reward On")
+        print("Auto Claim Free Rewards On")
         coroutine.wrap(smallReward)()
     else
-        print("Small Reward Off")
+        print("Auto Claim Free Rewards Off")
     end
 end)
 
